@@ -1,8 +1,27 @@
-#include<bits/stdc++.h>
-using namespace std;
+#include <stdio.h>
+
+char x[] = "programming";
+
+char y[] = "Fortran";
+
 int main()
+
 {
-    char * a;
-    *a+1='i';
-    cout<<*(a+1);
+
+    int i = 0l;
+
+    while (x[i] != '\0' && y[i] != '\0')
+
+    {
+
+        if (x[i] == y[i])
+
+        {
+            printf("%c", x[i]);
+            i++;
+        }
+
+        else
+            i++;
+    }
 }
