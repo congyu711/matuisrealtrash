@@ -1,27 +1,14 @@
-#include <stdio.h>
-
-char x[] = "programming";
-
-char y[] = "Fortran";
-
-int main()
-
+#include<bits/stdc++.h>
+using namespace std;
+void swapp(int &a,int &b)
 {
-
-    int i = 0l;
-
-    while (x[i] != '\0' && y[i] != '\0')
-
-    {
-
-        if (x[i] == y[i])
-
-        {
-            printf("%c", x[i]);
-            i++;
-        }
-
-        else
-            i++;
-    }
+    a=a^b;
+    b=a^b;
+    a=a^b;
+}
+int main()
+{
+    int a=1,b=2;
+    swapp(a,b);
+    cout<<a<<b;
 }
