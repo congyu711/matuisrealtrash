@@ -4,8 +4,18 @@
 using namespace std;
 void my_strcpy(char *destination, char *source)
 {
+    if (destination == NULL || source == NULL||destination==source||source[0]=='\0')
+    {
+        cout << "error";
+        return;
+    }
+    if (sizeof(destination) / sizeof(*destination) < sizeof(source) / sizeof(*source))
+    {
+        cout << "error";
+        return;
+    }
     int cnt = 0;
-    int sn = 0, dn = 0;
+
     // while (destination[dn++] != '\0')
     //     ;
     // while (source[sn++] != '\0')

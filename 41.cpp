@@ -27,7 +27,7 @@ int cmp(const Person &a, const Person &b)
 }
 void sort(Person *array, int n)
 {
-    if (n <= 0)
+    if (n < 1||array==NULL)
     {
         cout << "error";
         return;
@@ -47,12 +47,12 @@ void sort(Person *array, int n)
 // int main()
 // {
 //     Person array[200];
-//     array[0].age=2;
-//     array[0].height=1;
-//     array[0].no=1;
-//     array[1].age=1;
-//     array[1].height=1;
-//     array[1].no=1;
-//     sort(array,2);
-//     cout<<array[0].age;
+//     array[0].age = 2;
+//     array[0].height = 1;
+//     array[0].no = 1;
+//     array[1].age = 1;
+//     array[1].height = 1;
+//     array[1].no = 1;
+//     sort(array, 2);
+//     cout << array[0].age;
 // }
