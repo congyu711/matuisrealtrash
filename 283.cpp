@@ -34,18 +34,17 @@ struct node
     int data;
     struct node *next;
 };
-
-int main(int data[], int n)
+int data[]={1,2,5,6,23,443};
+int n=6;
+int main()
 {
     node *p;
-    node *header;
-    auto a = new node;
-    p = a;
-    header = a;
+    node* header = new node;
+    p = header;
     for (int i = 0; i < n; i++)
     {
         p->data = data[i];
-        auto b = new node;
+        node* b = new node;
         p->next = b;
         p = b;
     }
